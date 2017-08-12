@@ -11,4 +11,4 @@ The code folder contains 4 scripts:
       - Appication of the Common Graph scheme (CG) for the whole set of sensors.
   - "ShowEmbedding.m" - plots the calculated embeddings.
 
-For the application of the standard DM and the alternating DM we use the code package shared by Roy Lederman, the relevant scripts are located in the "Utils" folder. The full package is available in ttps://roy.lederman.name/alternating-diffusion/.
+For the application of the standard DM and the alternating DM we use the code package shared by Roy Lederman, the relevant scripts are located in the "Utils" folder. The full package is available in https://roy.lederman.name/alternating-diffusion/.
