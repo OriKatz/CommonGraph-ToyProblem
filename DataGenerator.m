@@ -66,10 +66,10 @@ for AngleInd = 1 : NumberOfAngles
     
     
     for sensor_inds=1:NumberOfSensors
-        str=[pwd,'\',SnapshotsFolder,'\',sprintf('s%d_%d.jpg',sensor_inds,AngleInd)];
+        str=[pwd,'/',SnapshotsFolder,'/',sprintf('s%d_%d.jpg',sensor_inds,AngleInd)];
         eval(sprintf('imwrite(Sensor%g,str,''jpg'')',sensor_inds));
     end
 end
-save([pwd,'\',SnapshotsFolder,'\Angles.mat'],'Angles');
-disp(sprintf('Finished generating snapshots. Snapshots were saved to ''%s''',[pwd,'\',SnapshotsFolder]));
+save([pwd,'/',SnapshotsFolder,'/Angles.mat'],'Angles');
+disp(sprintf('Finished generating snapshots. Snapshots were saved to ''%s''',[pwd,'/',SnapshotsFolder]));
 

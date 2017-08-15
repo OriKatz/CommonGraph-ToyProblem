@@ -37,9 +37,9 @@ CG_t=4;
 
 %% Data retrieval
 disp(sprintf('Loading the snapshots from the folder'));
-SnapshotsSensor1 = regexprep([SnapshotsFolder,'\s1_%d.jpg'],'\\','\\\\');
-SnapshotsSensor2 =  regexprep([SnapshotsFolder,'\s2_%d.jpg'],'\\','\\\\');
-SnapshotsSensor3 =  regexprep([SnapshotsFolder,'\s3_%d.jpg'],'\\','\\\\');
+SnapshotsSensor1 = regexprep([SnapshotsFolder,'/s1_%d.jpg'],'//','////');
+SnapshotsSensor2 =  regexprep([SnapshotsFolder,'/s2_%d.jpg'],'//','////');
+SnapshotsSensor3 =  regexprep([SnapshotsFolder,'/s3_%d.jpg'],'//','////');
 
 % calculation of the resize factor
 N_images=1e3;
@@ -69,7 +69,7 @@ for ImageInd=1:N_images
     Sensor2(ImageInd,:)=I2(:);
     Sensor3(ImageInd,:)=I3(:);
 end
-load([SnapshotsFolder,'\Angles']);
+load([SnapshotsFolder,'/Angles']);
 
 %% Preprocess data
 if UseRandomProjection
