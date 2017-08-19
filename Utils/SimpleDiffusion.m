@@ -48,7 +48,7 @@ function [d_t, Kt, K]=SimpleDiffusion_correct(d,t,numNeighbors)
 %   Compute the Markov Kernel by normalizing the affinity matrix.
 %
 %     K = MarkovMatFromAffinity( B );
-    [K, ~, ~, ~] =DiffusionKerFromAffinity_correct( B );
+    [K, ~, ~, ~] =DiffusionKerFromAffinity( B );
 %
 %   t steps of the diffusion.
 %
